@@ -1,5 +1,3 @@
-
-
 ```markdown
 # 📦 StockPulse - Inventory Management System
 
@@ -153,7 +151,7 @@ Dart SDK: 3.0.0 or higher
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/stockpulse.git
+   git clone https://github.com/SyedAsharRaza/stockpulse.git
    cd stockpulse
    ```
 
@@ -384,11 +382,11 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 👨‍💻 Author
 
-**[Syed Ashar Raza]**
+**Ashar Raza**
 
-- 🐱 GitHub: (https://github.com/SyedAsharRaza)
-- 💼 LinkedIn: (https://www.linkedin.com/in/ashar-raza-129484325/)
-- 📧 Email: asharazanaqvi@gmail.com
+- 🐱 GitHub: [@SyedAsharRaza](https://github.com/SyedAsharRaza)
+- 💼 LinkedIn: [Ashar Raza](https://www.linkedin.com/in/ashar-raza-129484325/)
+- 📧 Email: asharrazanaqvi@gmail.com
 
 ---
 
@@ -416,9 +414,3 @@ If you found this project helpful or interesting, please consider giving it a st
 
 </div>
 ```
-
----
-
----
-
-**DONE! Your README is now beautiful and professional!** 🎉✨
