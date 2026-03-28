@@ -1,4 +1,3 @@
-Got it. Here is your **complete, single, clean, copy-paste README.md** — no extra talk, no breaks, fully professional:
 
 ```markdown
 # StockPulse - Inventory Management System
