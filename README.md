@@ -1,185 +1,215 @@
+Got it. Here is your **complete, single, clean, copy-paste README.md** — no extra talk, no breaks, fully professional:
+
+```markdown
 # StockPulse - Inventory Management System
 
-A modern, production-ready inventory management application built with Flutter and Provider state management.
+A modern, scalable **B2B inventory management system** built with Flutter, designed to deliver real-time insights, efficient stock handling, and a clean, professional user experience.
 
-![Flutter](https://img.shields.io/badge/Flutter-3.0+-02569B?style=flat&logo=flutter)
-![Dart](https://img.shields.io/badge/Dart-3.0+-0175C2?style=flat&logo=dart)
-![Provider](https://img.shields.io/badge/State-Provider-green)
+---
 
-## About
+## 📊 Overview
 
-StockPulse is a comprehensive B2B inventory tracking solution designed for small to medium businesses. It provides real-time stock monitoring, intelligent alerts, and detailed analytics in a modern, intuitive interface.
+**StockPulse** is a feature-rich inventory management application that enables businesses to track stock levels, monitor performance, and gain actionable insights through an intuitive dashboard.
 
-## Features
+Built using **Flutter and Provider**, the application follows a **clean architecture pattern**, ensuring scalability, maintainability, and high performance.
 
-### Core Functionality
-- **Real-time Inventory Tracking** - Monitor stock levels with automated alerts
-- **Advanced Search & Filters** - Multi-criteria filtering by name, SKU, category, and status
-- **Comprehensive Analytics** - Health metrics, category insights, and value tracking
-- **Complete Audit Trail** - Full transaction history with advanced filtering
-- **Dark/Light Theme** - Persistent theme switching with Material Design 3
-- **Offline-First** - Pure client-side state management (no backend required)
+---
 
-### Dashboard
-- Live inventory value calculation
-- Critical stock alerts with quick actions
-- Health score percentage tracking
-- Recent transaction activity feed
+## 🚀 Features
 
-### Inventory Management
-- Complete CRUD operations
-- Real-time search by name or SKU
-- Multi-criteria filtering and sorting
-- Inline stock adjustments
-- Auto-generated SKU codes
-- Form validation
+| Feature | Description |
+|--------|------------|
+| 📈 Real-time Dashboard | Displays key metrics such as Total Inventory Value, Alerts, and Health Score |
+| 📦 Inventory Management | Full CRUD operations, search, filters, and inline stock adjustments |
+| 🧾 Audit Trail | Complete transaction history with advanced filtering |
+| 📊 Analytics | Health distribution, category breakdown, and top-performing products |
+| ⚙️ Settings | Theme toggle, category management, and data controls |
+| 🌗 Dark/Light Mode | Seamless theme switching |
 
-### Analytics
-- Total inventory valuation
-- Stock health distribution
-- Category-wise breakdown
-- Top 5 products by value
-- Transaction statistics
+---
 
-### Audit Trail
-- Complete transaction history
-- Date range filtering
-- Transaction type filtering
-- Product-specific history
-- Chronological grouping
+## 🛠️ Tech Stack
 
-## Tech Stack
+<p align="left">
+  <img src="https://img.shields.io/badge/Flutter-3.0+-02569B?logo=flutter&logoColor=white" />
+  <img src="https://img.shields.io/badge/Dart-3.0+-0175C2?logo=dart&logoColor=white" />
+  <img src="https://img.shields.io/badge/State%20Management-Provider-42A5F5" />
+  <img src="https://img.shields.io/badge/UI-Material%20Design%203-6200EE" />
+</p>
 
-- **Framework:** Flutter 3.0+
-- **Language:** Dart 3.0+
-- **State Management:** Provider (MultiProvider architecture)
-- **Architecture:** Clean Architecture with separation of concerns
-- **UI/UX:** Material Design 3 with custom design system
-- **Typography:** Google Fonts (Poppins, Inter, JetBrains Mono)
+---
 
-## Project Structure
-lib/
-├── core/ # App-wide configurations
-│ ├── constants/ # Colors, text styles
-│ ├── theme/ # Theme data and provider
-│ └── utils/ # Helper functions
-├── models/ # Data models
-├── providers/ # State management (4 providers)
-├── screens/ # Feature screens
-│ ├── dashboard/
-│ ├── inventory/
-│ ├── audit_trail/
-│ ├── analytics/
-│ └── settings/
-└── widgets/ # Reusable UI components
+## 📁 Project Structure
 
-text
+```
 
+stockpulse/
+│
+├── lib/
+│   ├── core/
+│   │   ├── constants/
+│   │   │   ├── app_colors.dart
+│   │   │   └── app_text_styles.dart
+│   │   ├── theme/
+│   │   │   ├── app_theme.dart
+│   │   │   └── theme_provider.dart
+│   │   └── utils/
+│   │       └── helpers.dart
+│   │
+│   ├── models/
+│   │   ├── category_model.dart
+│   │   ├── product_model.dart
+│   │   └── transaction_model.dart
+│   │
+│   ├── providers/
+│   │   ├── category_provider.dart
+│   │   ├── inventory_provider.dart
+│   │   ├── transaction_provider.dart
+│   │   └── theme_provider.dart
+│   │
+│   ├── screens/
+│   │   ├── dashboard/
+│   │   │   └── dashboard_screen.dart
+│   │   ├── inventory/
+│   │   │   ├── inventory_screen.dart
+│   │   │   ├── add_product_screen.dart
+│   │   │   └── product_detail_screen.dart
+│   │   ├── audit_trail/
+│   │   │   └── audit_trail_screen.dart
+│   │   ├── analytics/
+│   │   │   └── analytics_screen.dart
+│   │   └── settings/
+│   │       └── settings_screen.dart
+│   │
+│   ├── widgets/
+│   │   ├── common/
+│   │   │   ├── custom_app_bar.dart
+│   │   │   ├── custom_text_field.dart
+│   │   │   ├── primary_button.dart
+│   │   │   ├── status_badge.dart
+│   │   │   └── empty_state.dart
+│   │   ├── dashboard/
+│   │   │   ├── metric_card.dart
+│   │   │   └── quick_action_card.dart
+│   │   └── inventory/
+│   │       └── product_card.dart
+│   │
+│   └── main.dart
+│
+├── android/
+├── ios/
+├── web/
+│
+├── screenshots/
+│   ├── dashboard.jpeg
+│   ├── inventory.jpeg
+│   ├── analytics1.jpeg
+│   ├── analytics2.jpeg
+│   └── product_detail.jpeg
+│
+├── pubspec.yaml
+├── analysis_options.yaml
+└── README.md
 
-## Getting Started
+```
 
-### Prerequisites
-Flutter SDK: 3.0.0+
-Dart SDK: 3.0.0+
+---
 
-text
+## 🏗️ Architecture Highlights
 
+| Layer | Purpose | Components |
+|------|--------|-----------|
+| Core | App-wide configuration | Theme, colors, utilities |
+| Models | Data structures | Immutable models |
+| Providers | State & business logic | 4 providers |
+| Screens | Feature modules | Dashboard, Inventory, Analytics, etc. |
+| Widgets | Reusable UI | Shared components |
 
-### Installation
+---
 
-1. Clone the repository
-```bash
-git clone https://github.com/SyedAsharRaza/stockpulse.git
-cd stockpulse
-Install dependencies
-Bash
+## 📊 Provider Architecture
 
-flutter pub get
-Run the app
-Bash
+```
 
-flutter run
-## Screenshots
+MultiProvider
+├── ThemeProvider          → App theme state
+├── CategoryProvider       → Category management
+├── InventoryProvider      → Product CRUD & logic
+└── TransactionProvider    → Audit trail & filtering
+
+Total: 4 providers
+
+````
+
+---
+
+## 🎨 Design System
+
+- Typography: Poppins (headings), Inter (body), JetBrains Mono (data)
+- Themes: Dark (default), Light
+- Status Colors:
+  - Healthy → Green  
+  - Low → Amber  
+  - Critical → Red  
+  - Out of Stock → Gray  
+- Reusable Components: 11 custom widgets
+
+---
+
+## 📸 Screenshots
 
 ### Dashboard
 ![Dashboard](screenshots/dashboard.jpeg)
 
-### Inventory Management
+### Inventory
 ![Inventory](screenshots/inventory.jpeg)
 
 ### Analytics
-![Analytics](screenshots/analytics1.jpeg)
-![Analytics](screenshots/analytics2.jpeg)
+<p align="center">
+  <img src="screenshots/analytics1.jpeg" width="45%" />
+  <img src="screenshots/analytics2.jpeg" width="45%" />
+</p>
 
-### Product Details
+### Product Detail
 ![Product Detail](screenshots/product_detail.jpeg)
 
-State Management Architecture
-Providers
-ThemeProvider - Manages app theme state
-CategoryProvider - Handles product categories
-InventoryProvider - Core product CRUD and business logic
-TransactionProvider - Transaction logging and filtering
-Key Design Patterns
-Immutable state using copyWith pattern
-Computed properties for dynamic metrics
-Separation of concerns (Models, Providers, Screens, Widgets)
-Reactive UI with Consumer widgets
-Features in Detail
-Business Logic
-Stock status calculation:
+---
 
-dart
+## ⚙️ Installation
 
-- Out of Stock: quantity = 0
-- Critical: quantity <= min threshold
-- Low: quantity <= min threshold × 2
-- Healthy: quantity > min threshold × 2
-Inventory metrics:
+```bash
+git clone https://github.com/SyedAsharRaza/StockPulse.git
+cd StockPulse
+flutter pub get
+flutter run
+````
 
-dart
+---
 
-- Total Value: Sum of (quantity × unit cost) for all products
-- Health Score: (Healthy products / Total products) × 100
-- Alerts: Count of Critical + Low stock items
-Search & Filter
-Real-time search by product name or SKU
-Filter by category (Electronics, Furniture, Office Supplies, etc.)
-Filter by stock status (All, Healthy, Low, Critical, Out of Stock)
-Sort by Name, Value, Quantity, Recently Updated
-Future Enhancements
-Backend integration (Firebase/REST API)
-User authentication and multi-user support
-Barcode scanning for products
-Export reports (PDF/CSV)
-Push notifications for low stock alerts
-Product images with cloud storage
-Supplier management
-Purchase order tracking
-Learning Outcomes
-This project demonstrates:
+## 🔮 Future Enhancements
 
-Advanced Flutter state management with Provider
-Clean architecture implementation
-Complex filtering and search algorithms
-Real-time data calculations
-Custom theming and design systems
-Form validation and error handling
-Transaction logging patterns
-Author
-Syed Ashar Raza
+* Cloud integration (Firebase / APIs)
+* Role-based authentication
+* Barcode/QR scanning
+* Export reports (PDF/Excel)
+* Notifications system
+* Multi-language support
 
-GitHub: https://github.com/SyedAsharRaza 
-LinkedIn: https://www.linkedin.com/in/ashar-raza-129484325/
-Email: asharrazanaqvi@gmail.com
-License
-This project is open source and available under the MIT License.
+---
 
-Acknowledgments
-Flutter team for the amazing framework
-Material Design for UI/UX guidelines
-Provider package maintainers
-The Flutter community
-If you found this project helpful, please consider giving it a star!
+## 👤 Author
 
-Built with Flutter and Provider.
+**Syed Ashar Raza**
+
+* GitHub: [https://github.com/SyedAsharRaza](https://github.com/SyedAsharRaza)
+* Email: [asharrazanaqvi@gmail.com](mailto:asharrazanaqvi@gmail.com)
+* LinkedIn: [https://www.linkedin.com/in/ashar-raza-129484325/](https://www.linkedin.com/in/ashar-raza-129484325/)
+
+---
+
+## ⭐ Support
+
+If you found this project useful, give it a star ⭐ on GitHub.
+
+```
+```
